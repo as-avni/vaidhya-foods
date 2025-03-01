@@ -9,7 +9,6 @@ export default function Reviews() {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0)
 
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const reviews = [
     {
       id: 1,
@@ -44,7 +43,6 @@ export default function Reviews() {
       text: "I recommend Vaidhya dairy products to all my clients. Pure, preservative-free, and packed with nutrients.",
     },
   ]
-  
   const memoizedReviews = useMemo(() => reviews, [reviews]);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -52,7 +50,7 @@ export default function Reviews() {
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [memoizedReviews.length, reviews.length])
+  }, [reviews.length])
 
   const goToReview = (index: number) => {
     setCurrentReviewIndex(index)

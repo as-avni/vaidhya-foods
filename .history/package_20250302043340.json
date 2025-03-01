@@ -1,7 +1,7 @@
 {
   "name": "vaidhya-foods",
   "version": "0.1.0",
-  
+  "type": ,
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

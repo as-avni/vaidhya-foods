@@ -9,7 +9,6 @@ export default function Reviews() {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0)
 
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const reviews = [
     {
       id: 1,
@@ -52,7 +51,7 @@ export default function Reviews() {
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [memoizedReviews.length, reviews.length])
+  }, [reviews.length])
 
   const goToReview = (index: number) => {
     setCurrentReviewIndex(index)

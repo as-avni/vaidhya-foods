@@ -52,7 +52,7 @@ export default function Reviews() {
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [memoizedReviews.length, reviews.length])
+  }, [memoizedreviews.length])
 
   const goToReview = (index: number) => {
     setCurrentReviewIndex(index)

@@ -4,6 +4,7 @@ import WhyUs from "@/components/WhyUs"
 import OurProducts from "@/components/OurProducts"
 import Reviews from "@/components/Reviews"
 import ContactUs from "@/components/ContactUs"
+// import ContactForm from "@/components/ContactForm"
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       <AboutUs />
       <WhyUs />
       <OurProducts />
-      <Reviews />
+      {/* <Reviews /> */}
       <ContactUs />
+      {/* <ContactForm /> */}
     </>
   )
 }

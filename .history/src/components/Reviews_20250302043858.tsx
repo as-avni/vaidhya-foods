@@ -2,14 +2,10 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { useMemo } from "react";
-
 
 export default function Reviews() {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0)
 
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const reviews = [
     {
       id: 1,
@@ -44,15 +40,14 @@ export default function Reviews() {
       text: "I recommend Vaidhya dairy products to all my clients. Pure, preservative-free, and packed with nutrients.",
     },
   ]
-  
-  const memoizedReviews = useMemo(() => reviews, [reviews]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentReviewIndex((prevIndex) => (prevIndex + 1) % reviews.length)
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [memoizedReviews.length, reviews.length])
+  }, [])
 
   const goToReview = (index: number) => {
     setCurrentReviewIndex(index)
@@ -61,7 +56,7 @@ export default function Reviews() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container">
-        <h2 className="section-title">What Are They Saying About Us</h2>
+        <h2 className="section-title font-sriracha">What Are They Saying About Us</h2>
 
         <div className="max-w-4xl mx-auto">
           <div className="relative overflow-hidden bg-gray-50 rounded-lg border-l-4 border-black">
