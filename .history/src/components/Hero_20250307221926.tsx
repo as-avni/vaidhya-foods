@@ -86,7 +86,7 @@ export default function Hero() {
           ></iframe>
         </div>
       </div>
-    </div>
+    </div
   )}
 
   {/* Indicators */}
