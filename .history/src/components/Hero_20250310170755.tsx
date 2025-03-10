@@ -45,7 +45,7 @@ export default function Hero() {
   <div className="container md:mt-0 mt-8 relative z-10 flex flex-col items-start justify-center h-full text-white">
     <div className="max-w-2xl">
       <h1 className="mb-4 text-2xl font-bold font-sriracha leading-tight md:text-6xl">
-        Taste of Purity
+        Where Tradition Meets Freshness
       </h1>
       <p className="mb-8 text-xl font-sriracha">Creamy, Dreamy, And Always Fresh</p>
       <div className="flex flex-wrap gap-4">
