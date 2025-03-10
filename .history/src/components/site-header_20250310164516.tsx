@@ -17,7 +17,6 @@ return (
           <Image src="/img/logo-vaidhya.png" alt="Logo" width={40} height={40} className="h-10 w-auto" />
           <span className="text-xl font-bold text-black font-sriracha px-8 md:px-0">Vaidhya Foods</span>
         </div>
-        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6 text-sm font-sriracha">

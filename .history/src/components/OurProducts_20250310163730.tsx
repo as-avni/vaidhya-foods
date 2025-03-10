@@ -100,10 +100,16 @@ export default function OurProducts() {
 
       {selectedProduct && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white bg-opacity-90 w-[95%] md:w-[90%] h-[95%] md:h-80%] rounded-3xl flex flex-col md:flex-row overflow-hidden relative">
+          <div className="bg-green-100 bg-opacity-90 w-[95%] md:w-[90%] h-[95%] md:h-80%] rounded-3xl flex flex-col md:flex-row overflow-hidden relative">
+            <button 
+              className="absolute top-4 right-4 text-gray-700 hover:text-gray-900" 
+              onClick={() => setSelectedProduct(null)}>
+              <X size={24} />
+            </button>
             <button 
               className="absolute top-4 right-4 text-gray-700 hover:text-gray-900 z-50" 
-              onClick={() => setSelectedProduct(null)}>
+              onClick={() => setSelectedProduct(null)}
+            >
               <X size={24} />
             </button>
             <div className="md:w-1/2 w-full h-1/2 md:h-full relative">

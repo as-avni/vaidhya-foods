@@ -8,7 +8,7 @@ interface TwitterWidgetProps {
 }
 
 const TwitterWidget: React.FC<TwitterWidgetProps> = ({ width = 340, height = 500 }) => {
-  const username = "chitrashalaprod"; // Replace with your actual Twitter username
+  const username = "narendramodi"; // Replace with your actual Twitter username
 
   useEffect(() => {
     // Load Twitter Embed SDK

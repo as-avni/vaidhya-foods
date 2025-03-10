@@ -99,11 +99,12 @@ export default function OurProducts() {
       </div>
 
       {selectedProduct && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white bg-opacity-90 w-[95%] md:w-[90%] h-[95%] md:h-80%] rounded-3xl flex flex-col md:flex-row overflow-hidden relative">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 overflow-y-auto">
+          <div className="bg-green-100 bg-opacity-90 w-full max-w-5xl rounded-3xl flex flex-col md:flex-row overflow-hidden relative">
             <button 
               className="absolute top-4 right-4 text-gray-700 hover:text-gray-900 z-50" 
-              onClick={() => setSelectedProduct(null)}>
+              onClick={() => setSelectedProduct(null)}
+            >
               <X size={24} />
             </button>
             <div className="md:w-1/2 w-full h-1/2 md:h-full relative">
@@ -117,11 +118,11 @@ export default function OurProducts() {
             <div className="md:w-1/2 w-full h-1/2 md:h-full p-6 flex flex-col justify-center">
               <h2 className="text-3xl font-bold mb-2">{selectedProduct.name}</h2>
               <p className="mb-10">{selectedProduct.description}</p>
-              <p className="text-sm mb-4 leading-none md:leading-[0.7]"><strong>Ingredients: </strong>{selectedProduct.ingredients}</p>
-              <p className="text-sm mb-4 leading-none md:leading-[0.7]"><strong>Process: </strong> {selectedProduct.process}</p>
-              <p className="text-sm mb-4 leading-none md:leading-[0.7]"><strong>Uses: </strong> {selectedProduct.uses}</p>
-              <p className="text-sm mb-4 leading-none md:leading-[0.7]"><strong>Storage: </strong> {selectedProduct.storage}</p>
-              <p className="text-sm mb-4 leading-none md:leading-[0.7]"><strong>Available in: </strong>{selectedProduct.variants}</p>
+              <p className="text-sm mb-4"><strong>Ingredients: </strong>{selectedProduct.ingredients}</p>
+              <p className="text-sm mb-4"><strong>Process: </strong> {selectedProduct.process}</p>
+              <p className="text-sm mb-4"><strong>Uses: </strong> {selectedProduct.uses}</p>
+              <p className="text-sm mb-4"><strong>Storage: </strong> {selectedProduct.storage}</p>
+              <p className="text-sm mb-4"><strong>Available in: </strong>{selectedProduct.variants}</p>
             </div>
           </div>
         </div>
