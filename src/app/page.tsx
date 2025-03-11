@@ -4,8 +4,9 @@ import WhyUs from "@/components/WhyUs"
 import OurProducts from "@/components/OurProducts"
 import Reviews from "@/components/Reviews"
 import ContactUs from "@/components/ContactUs"
-import YoutubeSection from "@/components/social/YouTubeSection"
-import SocialDashboard from "@/components/social/socials"
+// import YoutubeSection from "@/components/social/YouTubeSection"
+import YouTubeSection1 from "@/components/social/YT-ID-ONLY"
+// import SocialDashboard from "@/components/social/socials"
 
 
 export default function Home() {
@@ -16,8 +17,9 @@ export default function Home() {
       <WhyUs />
       <OurProducts />
       <Reviews />
-      <YoutubeSection />
-      <SocialDashboard />
+      {/* <YoutubeSection /> */}
+      <YouTubeSection1 />
+      {/* <SocialDashboard /> */}
       <ContactUs />
     </>
   )

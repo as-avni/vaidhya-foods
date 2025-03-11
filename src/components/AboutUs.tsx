@@ -14,8 +14,15 @@ export default function AboutUs() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Side - Full Height Image */}
           <div className="h-full">
+            {/* <Image
+              src="/img/about-us/ab-2.png"
+              alt="Vaidhya Foods"
+              width={600}
+              height={800}
+              className="object-cover w-full h-full rounded-lg"
+            /> */}
             <Image
-              src="/img/about-us/ab-3.png"
+              src="https://drive.google.com/uc?export=view&id=12snujZJ6Utio8W_iUl688H2hsBNBNvy5"
               alt="Vaidhya Foods"
               width={600}
               height={800}
@@ -85,7 +92,7 @@ export default function AboutUs() {
             <div className="relative w-full h-96 mx-auto md:mx-0">
             <>
                   <Image
-                    src="/img/about-us/ab-1.png"
+                    src="https://drive.google.com/uc?export=view&id=1MTIFFuG3uRDMlGTsneoBNDUgctFm6wiN"
                     alt="Vaidhya Foods Video"
                     width={800}
                     height={800}
@@ -112,7 +119,7 @@ export default function AboutUs() {
             </div>
             {isModalOpen && (
               <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
-                <div className="relative bg-green-200 bg-opacity-90 rounded-lg p-6 h-3/4 w-full max-w-xl">
+                <div className="relative bg-green-200 bg-opacity-90 rounded-lg p-6 h-3/4 w-full max-w-3xl">
                   <button
                     className="absolute top-0 right-0 text-black hover:text-red-500"
                     onClick={() => setIsModalOpen(false)}
@@ -124,8 +131,8 @@ export default function AboutUs() {
                       className="w-full h-full rounded-lg"
                       width="560"
                       height="315"
-                      src="https://www.youtube.com/embed/s1D1fpvl-A0?si=QOurgyxC-9429NVc&autoplay=1&loop=1&playlist=s1D1fpvl-A0" // Replace VIDEO_ID with the actual ID of the YouTube Short
-                      title="YouTube Short"
+                      src="https://www.youtube.com/embed/ed85AdPvIxs?si=9VKPE6hNwRudxzZH&autoplay=1&loop=1&playlist=ed85AdPvIxs"
+                      title="Vaidhya Foods Video"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen

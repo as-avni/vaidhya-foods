@@ -22,7 +22,7 @@ export default function OurProducts() {
     {
       id: 1,
       name: "Mozerella Cheese",
-      image: "/img/menu/Mozrela.png",
+      image: "https://drive.google.com/uc?export=view&id=1YycGILbYJ3cGM28WffJ-q5cfYJl_eok6",
       variants: "1 kg ☑️ / 5 kg / 15 kg",
       description: "Delicious and fresh mozzarella cheese perfect for pizzas and more.",
       ingredients: "Milk, rennet, starters pizzas, pasta, sandwiches, and salads.",
@@ -33,7 +33,7 @@ export default function OurProducts() {
     {
       id: 2,
       name: "Paneer",
-      image: "/img/menu/Paneer.png",
+      image: "https://drive.google.com/uc?export=view&id=1zVKUzk9wsf0pVMV1AlGOoQSl3JG-MNly",
       variants: "1 kg ☑️ / 5 kg / 15 kg",
       description: "Soft and fresh paneer, great for curries and snacks.",
       ingredients: "Milk, rennet, starters pizzas, pasta, sandwiches, and salads.",
@@ -44,7 +44,7 @@ export default function OurProducts() {
     {
       id: 3,
       name: "Plain Dahi",
-      image: "/img/menu/Plain.png",
+      image: "https://drive.google.com/uc?export=view&id=1JKaFRDT3kJf2yM4pRtp00VkGUFj-FFqH",
       variants: "1 kg / 5 kg / 15 kg ☑️",
       description: "Thick and creamy plain yogurt, perfect for daily consumption.",
       ingredients: "Milk, bacterial cultures.",
@@ -55,7 +55,7 @@ export default function OurProducts() {
     {
       id: 4,
       name: "Kadhi Dahi",
-      image: "/img/menu/Kadhi.png",
+      image: "https://drive.google.com/uc?export=view&id=1vd9DP8jDDwXI7fofBXmOzyuNP0F8vPMd",
       variants: "1 kg / 5 kg ☑️ / 15 kg",
       description: "Special kadhi dahi, ideal for making authentic kadhi dishes.",
       ingredients: "Milk, bacterial cultures.",
@@ -111,17 +111,17 @@ export default function OurProducts() {
                 src={selectedProduct.image}
                 alt={selectedProduct.name}
                 fill
-                className="object-contain p-8 md:p-16"
+                className="object-contain p-8 md:p-20"
               />
             </div>
             <div className="md:w-1/2 w-full h-1/2 md:h-full p-6 flex flex-col justify-center">
               <h2 className="text-3xl font-bold mb-2">{selectedProduct.name}</h2>
               <p className="mb-10">{selectedProduct.description}</p>
-              <p className="text-sm mb-4 leading-none md:leading-[0.7]"><strong>Ingredients: </strong>{selectedProduct.ingredients}</p>
-              <p className="text-sm mb-4 leading-none md:leading-[0.7]"><strong>Process: </strong> {selectedProduct.process}</p>
-              <p className="text-sm mb-4 leading-none md:leading-[0.7]"><strong>Uses: </strong> {selectedProduct.uses}</p>
-              <p className="text-sm mb-4 leading-none md:leading-[0.7]"><strong>Storage: </strong> {selectedProduct.storage}</p>
-              <p className="text-sm mb-4 leading-none md:leading-[0.7]"><strong>Available in: </strong>{selectedProduct.variants}</p>
+              <p className="text-sm mb-4 "><strong>Ingredients: </strong>{selectedProduct.ingredients}</p>
+              <p className="text-sm mb-4 "><strong>Process: </strong> {selectedProduct.process}</p>
+              <p className="text-sm mb-4 "><strong>Uses: </strong> {selectedProduct.uses}</p>
+              <p className="text-sm mb-4 "><strong>Storage: </strong> {selectedProduct.storage}</p>
+              <p className="text-sm mb-4 "><strong>Available in: </strong>{selectedProduct.variants}</p>
             </div>
           </div>
         </div>

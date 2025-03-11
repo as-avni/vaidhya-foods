@@ -10,13 +10,10 @@ export default function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const backgroundImages = [
-    "/img/background/hero-bg1.png",
-    "/img/background/hero-bg2.png",
-    "img/background/hero-bg3.png",
-    // "/img/background/3.png",
-    // "/img/background/4.png",
-    // "img/background/5.png",
-  ]
+    "https://lh3.googleusercontent.com/d/1kYRRfkY0zEYjJgRs7fmpQPDLXrOhLeVR=w1920-h1080",
+    "https://lh3.googleusercontent.com/d/1rrPcroxNtQa93sfdTk_uZRJgrHBViGmE=w1920-h1080",
+    "https://lh3.googleusercontent.com/d/1QOlo0W3fBtiJPAOcX06Vss48vpHOURsk=w1920-h1080",
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -66,7 +63,7 @@ export default function Hero() {
   {/* Video Modal */}
   {isModalOpen && (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
-      <div className="relative bg-green-200 bg-opacity-90 rounded-lg p-6 h-3/4 w-full max-w-xl">
+      <div className="relative bg-green-200 bg-opacity-90 rounded-lg p-6 h-3/4 w-full max-w-3xl">
         <button
           className="absolute top-0 right-0 text-black hover:text-red-500"
           onClick={() => setIsModalOpen(false)}
@@ -78,8 +75,8 @@ export default function Hero() {
             className="w-full h-full rounded-lg"
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/lwDRgXvMNmQ?si=UwmdAjVF3erYrtNx" // Replace VIDEO_ID with the actual ID of the YouTube Short
-            title="YouTube Short"
+            src="https://www.youtube.com/embed/ed85AdPvIxs?si=9VKPE6hNwRudxzZH&autoplay=1&loop=1&playlist=ed85AdPvIxs"
+            title="Vaidhya Foods Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
