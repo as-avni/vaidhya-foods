@@ -1,0 +1,79 @@
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react"; // Icons for open/close menu
+
+export default function SiteHeader() {
+const [isOpen, setIsOpen] = useState(false);
+return (
+<header className=" bg-white bg-opacity-80 backdrop-blur-md shadow-lg sticky md:fixed top-0 md:top-3 left-0 md:left-10 w-[98%] md:w-[95%] mx-auto rounded-xl z-50 ">
+      <div className="mx-auto px-4 py-4 flex items-center justify-between">
+
+        {/* Logo & Title */}
+        <Link href="/">
+        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2">https://drive.google.com/file/d/1Qz3RdEXLgXk0V_xjMcnYZeFiTkE36xif/view?usp=drive_link
+        {/*  */}
+          <Image src="https://drive.google.com/uc?export=view&id=1ByfOMhBgA3I_zZK4xyVEnFwhN0ofyie2" alt="Logo" width={40} height={40} className="h-10 w-auto" />
+          <span className="text-xl font-bold text-black font-sriracha px-8 md:px-0">Vaidhya Foods</span>
+        </div>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex gap-6 text-sm font-sriracha">
+          <Link href="/" className="relative text-black hover:text-green-600 text-base/[30px] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-green-600 after:transition-all after:duration-300 hover:after:w-full">
+            Home
+          </Link>
+          <Link href="/#about" className="relative text-black hover:text-green-600 text-base/[30px] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-green-600 after:transition-all after:duration-300 hover:after:w-full">
+            About Us
+          </Link>
+          <Link href="/#products" className="relative text-black hover:text-green-600 text-base/[30px] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-green-600 after:transition-all after:duration-300 hover:after:w-full">
+            Our Products
+          </Link>
+          <Link href="/#contact" className="relative text-black hover:text-green-600 text-base/[30px] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-green-600 after:transition-all after:duration-300 hover:after:w-full">
+            Contact Us
+          </Link>
+
+        </nav>
+
+        {/* Desktop Button */}
+        <Link href="tel:+917566645359" className="relative text-gray-600  text-lg font-semibold after:absolute after:bottom-0 after:left-0">
+            <Button className="bg-black font-sriracha hover:bg-green-600 text-white px-4 py-2 rounded-full hidden md:block">Call Us</Button>
+          </Link>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-gray-600 focus:outline-none"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-green-50 py-4 px-4 shadow-lg ">
+          <nav className="absolute top-16 left-0 w-full bg-green-50 shadow-lg py-4 flex flex-col items-center gap-4 md:hidden">
+          <Link href="/" className="relative text-black hover:text-green-600 text-base/[30px] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-green-600 after:transition-all after:duration-300 hover:after:w-full">
+            Home
+          </Link>
+          <Link href="/#about" className="relative text-black hover:text-green-600 text-base/[30px] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-green-600 after:transition-all after:duration-300 hover:after:w-full">
+            About Us
+          </Link>
+          <Link href="/#products" className="relative text-black hover:text-green-600 text-base/[30px] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-green-600 after:transition-all after:duration-300 hover:after:w-full">
+            Our Products
+          </Link>
+          <Link href="/#contact" className="relative text-black hover:text-green-600 text-base/[30px] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-green-600 after:transition-all after:duration-300 hover:after:w-full">
+            Contact Us
+          </Link>
+          <Link href="tel:+917566645359" className="w-full relative text-black  text-lg font-semibold after:absolute after:bottom-0 after:left-0">
+            <Button className="w-full bg-black hover:bg-green-600 text-white rounded-full">Call Us</Button>
+          </Link>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+}
