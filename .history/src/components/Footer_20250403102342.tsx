@@ -104,7 +104,7 @@ export default function Footer() {
         {/* Copyright Section */}
         <div className="mt-8 pt-6 border-t border-gray-200 text-center text-sm">
           <p className="mb-1">
-            © Copyright <span className="font-semibold font-kumbh text-xl">Vaidhya Foods</span> All Rights Reserved
+            © Copyright <span className="font-semibold font- text-xl">Vaidhya Foods</span> All Rights Reserved
           </p>
           <p className="text-gray-500">Designed by Chitrashala Tech</p>
         </div>

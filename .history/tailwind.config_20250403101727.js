@@ -19,7 +19,7 @@ module.exports = {
 			tiro: ["Tiro Devanagari Hindi", "serif"],
 			sriracha: ["Sriracha", "cursive"],
 			lexend: ["Lexend Deca", "sans-serif"],
-			kumbh: ['"Kumbh Sans"', 'sans-serif'],
+			
 		},
 		borderRadius: {
 			lg: 'var(--radius)',
@@ -70,6 +70,5 @@ module.exports = {
 	}
 }
 },
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 plugins: [require("tailwindcss-animate")],
 }

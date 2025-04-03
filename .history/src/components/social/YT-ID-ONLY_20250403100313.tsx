@@ -35,7 +35,7 @@ const YouTubeSection1 = () => {
 
   return (
     <section className="container mx-auto px-4 py-8">
-      <h2 className="md:text-4xl mb-6 text-center text-black font-kumbh leading-tight">
+      <h2 className="md:text-4xl mb-6 text-center text-black font-sriracha leading-tight">
         Latest YouTube Videos
       </h2>
 

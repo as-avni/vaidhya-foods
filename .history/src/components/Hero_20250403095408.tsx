@@ -43,17 +43,17 @@ export default function Hero() {
   {/* Content */}
   <div className="container top-0 md:top-0 md:mt-0 relative z-10 flex flex-col items-center justify-center h-full text-white">
     <div className="max-w-2xl">
-      <h1 className="mt-20 mb-4 text-6xl font-bold font-kumbh text-center leading-tight md:text-7xl">
+      <h1 className="mt-20 mb-4 text-6xl font-bold font-sriracha text-center leading-tight md:text-7xl">
         Taste of Purity
       </h1>
-      <p className="mb-8 text-2xl md:text-3xl font-kumbh text-center">Creamy, Dreamy, And Always Fresh</p>
+      <p className="mb-8 text-2xl md:text-3xl font-sriracha text-center">Creamy, Dreamy, And Always Fresh</p>
       <div className="flex flex-col space-y-4 items-center justify-center sm:flex-row sm:space-y-0 sm:gap-4">
-        <Link href="#products" className="bg-[#98be52] text-black btn rounded-full hover:bg-white w-auto px-6 py-3 text-lg md:text-xl">
+        <Link href="#products" className="bg-green-300 text-black btn rounded-full hover:bg-white w-auto px-6 py-3 text-lg md:text-xl">
           What We Serve
         </Link>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="btn text-black bg-[#98be52] rounded-full flex flex-wrap gap-2 hover:bg-white px-6 py-3 text-lg md:text-xl"
+          className="btn text-black bg-[] rounded-full flex flex-wrap gap-2 hover:bg-white px-6 py-3 text-lg md:text-xl"
         >          
           <PlayCircle className="h-7 w-7 text-black" strokeWidth={1.5} />
           View Our Product

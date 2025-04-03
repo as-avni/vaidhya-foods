@@ -23,7 +23,7 @@ const SiteHeader = () => {
           <Link
             key={index}
             href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
-            className="text-black hover:text-green-600 text-sm font-medium font-kumbh transition-all duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-green-600 after:transition-all after:duration-300 hover:after:w-full"
+            className="text-black hover:text-green-600 text-sm font-medium font- transition-all duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-green-600 after:transition-all after:duration-300 hover:after:w-full"
           >
             {item}
           </Link>

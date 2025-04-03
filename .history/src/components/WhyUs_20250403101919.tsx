@@ -11,7 +11,7 @@ export default function WhyUs() {
         <div className="flex flex-col md:flex-row gap-6 ">
           {/* First Box - Main Highlight */}
           <div className="h-auto md:w-[50%] bg-[#c6e195] text-black p-12 md:p-8 rounded-3xl flex flex-col justify-center shadow-lg shadow-black">
-            <h2 className="text-3xl mb-4 font-kumbh leading-tight">Why Choose Vaidhya Foods?</h2>
+            <h2 className="text-3xl mb-4 font- leading-tight">Why Choose Vaidhya Foods?</h2>
             <p>
               Choose us for fresh, premium-quality dairy products, crafted with tradition and innovation, ensuring
               authentic taste, nutritional value, and unmatched commitment to excellence.

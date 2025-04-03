@@ -17,7 +17,7 @@ export default function ContactUs() {
   return (
     <section id="contact-us" className="py-8 bg-white ">
       <div className="container space-y-12">
-        <h2 className="md:text-4xl text-center font-kumbh">Need Help? Contact Us</h2>
+        <h2 className="md:text-4xl text-center font-sriracha">Need Help? Contact Us</h2>
         {/* Map - Full Width */}
         <div className="w-full h-96 overflow-hidden bg-gray-200 rounded-3xl">
           <iframe
@@ -36,17 +36,17 @@ export default function ContactUs() {
         {/* Contact & Email - 2x2 Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mt-1 rounded-full bg-[#b5c991]">📞</div>
+            <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mt-1 rounded-full bg-text-[#98be52]">📞</div>
             <div>
-              <h3 className="text-xl font-bold font-kumbh">Call Us</h3>
+              <h3 className="text-xl font-bold font-sriracha">Call Us</h3>
               <Link href={`tel:+917566645359`} target="_blank" rel="noopener noreferrer" className="block mt-1 text-gray-600 transition-colors hover:text-green-600">{phone}</Link>
             </div>
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mt-1 rounded-full bg-[#b5c991]">✉️</div>
+            <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mt-1 rounded-full bg-text-[#98be52]">✉️</div>
             <div>
-              <h3 className="text-xl font-bold font-kumbh">Email Us</h3>
+              <h3 className="text-xl font-bold font-sriracha">Email Us</h3>
               <Link href={`mailto:${email}`} className="block mt-1 text-gray-600 transition-colors hover:text-green-600">{email}</Link>
             </div>
           </div>
@@ -55,17 +55,17 @@ export default function ContactUs() {
         {/* Address & WhatsApp */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mt-1 rounded-full bg-[#b5c991]">📍</div>
+            <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mt-1 rounded-full bg-text-[#98be52]">📍</div>
             <div>
-              <h3 className="text-xl font-bold font-kumbh">Address</h3>
+              <h3 className="text-xl font-bold font-sriracha">Address</h3>
               <Link href={`https://maps.google.com/?q=${encodeURIComponent(address)}`} target="_blank" rel="noopener noreferrer" className="block mt-1 text-gray-600 transition-colors hover:text-green-600">{address}</Link>
             </div>
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mt-1 rounded-full bg-[#b5c991]">💬</div>
+            <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mt-1 rounded-full bg-green-200">💬</div>
             <div>
-              <h3 className="text-xl font-bold font-kumbh">WhatsApp</h3>
+              <h3 className="text-xl font-bold font-sriracha">WhatsApp</h3>
               <Link href={`https://wa.me/${phone.replace(/\D/g, "")}`} target="_blank" rel="noopener noreferrer" className="block mt-1 text-gray-600 transition-colors hover:text-green-600">{phone}</Link>
             </div>
           </div>

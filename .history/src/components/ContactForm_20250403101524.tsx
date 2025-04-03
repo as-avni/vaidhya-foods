@@ -54,7 +54,7 @@ const ContactForm = () => {
         </div>
         <textarea name="message" placeholder="Your Message" rows={6} value={formData.message} onChange={handleChange} className="w-full px-4 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" required></textarea>
         <div className="text-center">
-          <button type="submit" disabled={isSubmitting} className="px-6 py-2 text-black rounded-3xl bg-[#b5c991] hover:bg-green-400 ">
+          <button type="submit" disabled={isSubmitting} className="px-6 py-2 text-black rounded-3xl bg-#b5c991] hover:bg-green-400 ">
             {isSubmitting ? "Sending..." : "Send"}
           </button>
         </div>

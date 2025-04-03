@@ -9,7 +9,7 @@ export default function AboutUs() {
   return (
     <section id="about-us" className="py-20 bg-white">
       <div className="container">
-        <h2 className="text-center md:text-4xl font-bold mb-8 font-kumbh">Learn More About Us</h2>
+        <h2 className="text-center md:text-4xl font-bold mb-8 font-">Learn More About Us</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Side - Full Height Image */}

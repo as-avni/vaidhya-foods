@@ -61,7 +61,7 @@ export default function Reviews() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container">
-        <h2 className="section-title font-kumbh leading-tight">What Are They Saying About Us</h2>
+        <h2 className="section-title font-k leading-tight">What Are They Saying About Us</h2>
 
         <div className="max-w-4xl mx-auto">
           <div className="relative overflow-hidden bg-gray-50 rounded-lg border-l-4 border-black">

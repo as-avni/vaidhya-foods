@@ -46,7 +46,7 @@ export default function Hero() {
       <h1 className="mt-20 mb-4 text-6xl font-bold font-kumbh text-center leading-tight md:text-7xl">
         Taste of Purity
       </h1>
-      <p className="mb-8 text-2xl md:text-3xl font-kumbh text-center">Creamy, Dreamy, And Always Fresh</p>
+      <p className="mb-8 text-2xl md:text-3xl font- text-center">Creamy, Dreamy, And Always Fresh</p>
       <div className="flex flex-col space-y-4 items-center justify-center sm:flex-row sm:space-y-0 sm:gap-4">
         <Link href="#products" className="bg-[#98be52] text-black btn rounded-full hover:bg-white w-auto px-6 py-3 text-lg md:text-xl">
           What We Serve

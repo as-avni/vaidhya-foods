@@ -68,7 +68,7 @@ export default function OurProducts() {
   return (
     <section id="our-products" className="py-20 bg-white">
       <div className="container">
-        <h2 className="md:text-4xl text-center mb-8 font-kumbh">Our Products</h2>
+        <h2 className="md:text-4xl text-center mb-8 font-sriracha">Our Products</h2>
 
         <div className="grid grid-cols items-center gap-8 md:grid-cols-4 sm:justify-between">
           {products.map((product) => (
@@ -92,7 +92,7 @@ export default function OurProducts() {
         </div>
 
         <div className="mt-12 text-center">
-          <Link href="#contact" className="btn bg-[#98be52] rounded-3xl">
+          <Link href="#contact" className="btn bg-[] rounded-3xl">
             Contact for Order
           </Link>
         </div>

@@ -65,7 +65,7 @@ export default function ContactUs() {
           <div className="flex items-start gap-4">
             <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mt-1 rounded-full bg-[#b5c991]">💬</div>
             <div>
-              <h3 className="text-xl font-bold font-kumbh">WhatsApp</h3>
+              <h3 className="text-xl font-bold font-sriracha">WhatsApp</h3>
               <Link href={`https://wa.me/${phone.replace(/\D/g, "")}`} target="_blank" rel="noopener noreferrer" className="block mt-1 text-gray-600 transition-colors hover:text-green-600">{phone}</Link>
             </div>
           </div>

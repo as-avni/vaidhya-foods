@@ -65,7 +65,7 @@ const YouTubeSection = () => {
           rel="noopener noreferrer"
           className="px-6 py-2 text-black bg-[#98be52] rounded-3xl shadow-md hover:bg-green-400 transition"
         >
-          Visit YouTube Chann
+          Visit YouTube Channel
         </a>
       </div>
     </section>

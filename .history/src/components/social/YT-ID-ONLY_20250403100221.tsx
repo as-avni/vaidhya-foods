@@ -35,7 +35,7 @@ const YouTubeSection1 = () => {
 
   return (
     <section className="container mx-auto px-4 py-8">
-      <h2 className="md:text-4xl mb-6 text-center text-black font-kumbh leading-tight">
+      <h2 className="md:text-4xl mb-6 text-center text-black font-sriracha leading-tight">
         Latest YouTube Videos
       </h2>
 
@@ -63,7 +63,7 @@ const YouTubeSection1 = () => {
           href={`https://www.youtube.com/channel/${CHANNEL_ID}?sub_confirmation=1`}
           target="_blank"
           rel="noopener noreferrer"
-      className="px-6 py-2 text-black bg-[#98be52] rounded-3xl shadow-md hover:bg-[#fafafa] transition"
+      className="px-6 py-2 text-black bg-[] rounded-3xl shadow-md hover:bg-green-400 transition"
         >
           Visit YouTube Channel
         </a>
