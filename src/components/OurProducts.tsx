@@ -43,14 +43,14 @@ export default function OurProducts() {
     },
     {
       id: 3,
-      name: "Plain Dahi",
-      image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743598576/4_llcqfh.png",
-      variants: "1 kg / 5 kg / 15 kg ☑️",
-      description: "Thick and creamy plain yogurt, perfect for daily consumption.",
-      ingredients: "Milk, bacterial cultures.",
-      process: "Milk is boiled, cooled, and mixed with bacterial cultures, then left to ferment until thick.",
-      uses: "Consumed directly, used in drinks, desserts, and cooking.",
-      storage: "Refrigerate and consume within a week.",
+      name: "Khoa",
+      image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743598575/2_t5fltz.png",
+      variants: "500g / 1 kg ☑️ / 5 kg",
+      description: "Premium-quality khoya, perfect for making traditional Indian sweets and desserts.",
+      ingredients: "Milk",
+      process: "Prepared by slow cooking full-fat milk until it thickens into a dense, rich solid.",
+      uses: "Used in making sweets like gulab jamun, barfi, peda, and also for rich gravies in Indian cuisine.",
+      storage: "Keep refrigerated and use within 5–7 days. Can be frozen for longer shelf life.",
     },
     {
       id: 4,
@@ -62,6 +62,17 @@ export default function OurProducts() {
       process: "Similar to plain dahi, but slightly sour curd is preferred for kadhi preparation.",
       uses: "Ideal for pizzas, pasta, sandwiches, and salads.",
       storage: "Refrigerate and consume within a few days for best sourness.",
+    },
+    {
+      id: 5,
+      name: "Plain Dahi",
+      image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743598576/4_llcqfh.png",
+      variants: "1 kg / 5 kg / 15 kg ☑️",
+      description: "Thick and creamy plain yogurt, perfect for daily consumption.",
+      ingredients: "Milk, bacterial cultures.",
+      process: "Milk is boiled, cooled, and mixed with bacterial cultures, then left to ferment until thick.",
+      uses: "Consumed directly, used in drinks, desserts, and cooking.",
+      storage: "Refrigerate and consume within a week.",
     },  
   ];
 
@@ -70,7 +81,7 @@ export default function OurProducts() {
       <div className="container">
         <h2 className="md:text-4xl text-center mb-8 font-kumbh">Our Products</h2>
 
-        <div className="grid grid-cols items-center gap-8 md:grid-cols-4 sm:justify-between">
+        <div className="grid grid-cols items-center gap-8 md:grid-cols-3 sm:justify-between">
           {products.map((product) => (
             <div 
               key={product.id} 

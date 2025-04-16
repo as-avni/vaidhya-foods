@@ -22,7 +22,7 @@ export default function AboutUs() {
               className="object-cover w-full h-full rounded-lg"
             /> */}
             <Image
-              src="https://res.cloudinary.com/dhi3iupue/image/upload/v1743599121/WhatsApp_Image_2025-03-12_at_03.50.38_58c1555f_lpl0ck.jpg"
+              src="https://res.cloudinary.com/dhi3iupue/image/upload/v1744829270/Vaidhya_About_Us_jr3z2y.png"
               alt="Vaidhya Foods"
               width={600}
               height={800}
@@ -92,7 +92,7 @@ export default function AboutUs() {
             <div className="relative w-full h-96 mx-auto md:mx-0">
             <>
                   <Image
-                    src="https://res.cloudinary.com/dhi3iupue/image/upload/v1743599121/WhatsApp_Image_2025-03-12_at_04.12.29_21d1ab0a_coy5pz.jpg"
+                    src="https://res.cloudinary.com/dhi3iupue/image/upload/v1744829874/Vaidhya_About_Us_2_axoiea.png"
                     alt="Vaidhya Foods Video"
                     width={800}
                     height={800}
@@ -131,7 +131,7 @@ export default function AboutUs() {
                       className="w-full h-full rounded-lg"
                       width="560"
                       height="315"
-                      src="https://www.youtube.com/embed/ed85AdPvIxs?si=9VKPE6hNwRudxzZH&autoplay=1&loop=1&playlist=ed85AdPvIxs"
+                      src="https://www.youtube.com/embed/uvnNnd3kzm8?si=L4EajFrymLIOV98u&autoplay=1&loop=1&playlist=uvnNnd3kzm8"
                       title="Vaidhya Foods Video"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
