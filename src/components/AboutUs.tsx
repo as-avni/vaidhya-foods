@@ -131,7 +131,7 @@ export default function AboutUs() {
                       className="w-full h-full rounded-lg"
                       width="560"
                       height="315"
-                      src="https://www.youtube.com/embed/uvnNnd3kzm8?si=L4EajFrymLIOV98u&autoplay=1&loop=1&playlist=uvnNnd3kzm8"
+                      src="https://www.youtube.com/embed/fcf8jk4yze4ZQOrg?si=L4EajFrymLIOV98u&autoplay=1&loop=1&playlist=fcf8jk4yze4ZQOrg"
                       title="Vaidhya Foods Video"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
