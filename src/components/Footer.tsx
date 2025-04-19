@@ -55,7 +55,7 @@ export default function Footer() {
             </div>
             <div className="text-sm">
               <p className="mb-1">
-                <span className="font-medium">Mon-Sat:</span> 11AM - 23PM
+                <span className="font-medium">Mon-Sat:</span> 07AM - 09PM
               </p>
               <p>
                 <span className="font-medium">Sunday:</span> Closed
@@ -106,7 +106,7 @@ export default function Footer() {
           <p className="mb-1">
             © Copyright <span className="font-semibold font-kumbh text-xl">Vaidhya Foods</span> All Rights Reserved
           </p>
-          <p className="text-gray-500">Designed by Chitrashala Tech</p>
+          <p className="text-gray-500">Designed by DigiGrowsUp</p>
         </div>
       </div>
 
